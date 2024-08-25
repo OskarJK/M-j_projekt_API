@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceny produktów na rynku Albion Europa</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Ceny produktu na rynku Albion EU</h1>    
+    </header>
+    <main>
+
+        <section class="search">
+            <label for="citySelect">Wybierz miasto:</label>
+            <select id="citySelect">
+                <option value="Thetford">Thetford</option>
+                <option value="Martlock">Martlock</option>
+                <option value="Fort Sterling">Fort Sterling</option>
+                <option value="Caerleon">Caerleon</option>
+                <option value="Lymhurst">Lymhurst</option>
+                <option value="Bridgewatch">Bridgewatch</option>
+            </select>
+
+            <label for="productInput">Wpisz produkt:</label>
+            <input type="text" id="productInput" placeholder="np. T5_CABBAGE">
+
+            <button>Wyszukaj!</button>   
+            <p class="error"></p>            
+        </section>
+
+
+        <section class="app">
+            <h2 class="city"></h2>
+            <h3 class="produkt"></h3>
+            
+            <p>Cena minimalna: <span class="minPrice"></span></p>
+            <p>Ostatnia aktualizacja: <span class="minDate"></span></p>           
+            <p>Cena maksymalna: <span class="maxPrice"></span></p>
+            <p>Ostatnia aktualizacja: <span class="maxDate"></span></p> 
+
+
+
+            <div class="albion-image">
+                <img src="./AlbionCitys.png" alt="Mapa Albionu">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Projekt WSB 2024 - Oskar Jakimiak - 74034</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
